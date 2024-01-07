@@ -2,7 +2,7 @@
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
 
-This is a [[Test]].
+This is a [[Test.md]].
 
 ## Commands
 
