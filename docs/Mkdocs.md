@@ -6,7 +6,7 @@
 > Ye shall know them by their fruits.
 > Matthew 7:16
 
-A week or so ago I came a across a web page [A gardening guide for your mind](https://www.mentalnodes.com/a-gardening-guide-for-your-mind)  which mentioned the following:
+I came a across a web page [A gardening guide for your mind](https://www.mentalnodes.com/a-gardening-guide-for-your-mind)  which mentioned the following:
 
 > A gardening guide for your mind
 > 
@@ -56,20 +56,25 @@ The first is that it serves the files with a mini web servers so you can work lo
 
 ### Save to Github Pages
 
-The second is that it renders contents as static HTML which you can scp up to your site. I am yet to do this. It also can deploy directly to Github pages. This I am also yet to try but I may end up using in the end to host my public repository. I guess that this involves in checking in the HTML to Github.
+The second is that it renders contents as static HTML which you can scp up to your site or you can set it up to deploy to Github pages. I redirected my static site to be hosted via Github using a custom domain and now I can run the command
 
-In terms of management the Markdown files will also need to be checked into Git.
+```mkdocs gh-deploy```
+
+to deploy the site. This automatically commits to the ```gh-pages``` branch and publishes to the site.
+
+The Markdown files and any other files touched also need to be checked into Git on the ```main``` branch.
+
+## Wiki Format
 
 One thing that made it more attractive to me was that there is a Wiki plugin which worked right away. This automatically makes a link to the page with the same title as the WikiLink so is an easy way to make a Wiki like site. Clicking on a broken wiki link will lead to the standard 404 page so it is not a Wiki in the true sense of the word.
 
 ## Full Text Search
 
-One feature that I wasn't expecting was full text search. I'm not sure exactly this works but I think that during the HTML creation the pages are tokenised an index created that allows a Javascript on the page to display they results. I'm not sure how this scales though.
+A feature that I wasn't expecting was full text search. I'm not sure exactly this works but I think that during the HTML creation the pages are tokenised an index created that allows a Javascript on the page to display they results. I'm not sure how this scales though.
 
 ## Extendibility
 
 Looking at the api docs and the plugins documentation it seems that it is fully extensible in python {--*and though I probably won't*--}.
-
 
 {{mymacro()}}
 
