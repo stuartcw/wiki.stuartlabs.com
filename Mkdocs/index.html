@@ -358,6 +358,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wiki-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wiki Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#full-text-search" class="md-nav__link">
     <span class="md-ellipsis">
       Full Text Search
@@ -436,11 +445,14 @@ Networked thinking can happen at many levels. A digital garden is a scalable way
 <h3 id="web-server">Web Server<a class="headerlink" href="#web-server" title="Permanent link">&para;</a></h3>
 <p>The first is that it serves the files with a mini web servers so you can work locally and see your site as you write. You could use it this way just to have a local information repository.</p>
 <h3 id="save-to-github-pages">Save to Github Pages<a class="headerlink" href="#save-to-github-pages" title="Permanent link">&para;</a></h3>
-<p>The second is that it renders contents as static HTML which you can scp up to your site. I am yet to do this. It also can deploy directly to Github pages. This I am also yet to try but I may end up using in the end to host my public repository. I guess that this involves in checking in the HTML to Github.</p>
-<p>In terms of management the Markdown files will also need to be checked into Git.</p>
+<p>The second is that it renders contents as static HTML which you can scp up to your site or you can set it up to deploy to Github pages. I redirected my static site to be hosted via Github using a custom domain and now I can run the command</p>
+<p><code>mkdocs gh-deploy</code></p>
+<p>to deploy the site. This automatically commits to the <code>gh-pages</code> branch and publishes to the site.</p>
+<p>The Markdown files and any other files touched also need to be checked into Git on the <code>main</code> branch.</p>
+<h2 id="wiki-format">Wiki Format<a class="headerlink" href="#wiki-format" title="Permanent link">&para;</a></h2>
 <p>One thing that made it more attractive to me was that there is a Wiki plugin which worked right away. This automatically makes a link to the page with the same title as the WikiLink so is an easy way to make a Wiki like site. Clicking on a broken wiki link will lead to the standard 404 page so it is not a Wiki in the true sense of the word.</p>
 <h2 id="full-text-search">Full Text Search<a class="headerlink" href="#full-text-search" title="Permanent link">&para;</a></h2>
-<p>One feature that I wasn&rsquo;t expecting was full text search. I&rsquo;m not sure exactly this works but I think that during the HTML creation the pages are tokenised an index created that allows a Javascript on the page to display they results. I&rsquo;m not sure how this scales though.</p>
+<p>A feature that I wasn&rsquo;t expecting was full text search. I&rsquo;m not sure exactly this works but I think that during the HTML creation the pages are tokenised an index created that allows a Javascript on the page to display they results. I&rsquo;m not sure how this scales though.</p>
 <h2 id="extendibility">Extendibility<a class="headerlink" href="#extendibility" title="Permanent link">&para;</a></h2>
 <p>Looking at the api docs and the plugins documentation it seems that it is fully extensible in python <del class="critic"><em>and though I probably won&rsquo;t</em></del>.</p>
 <p>You can extend MkDocs with code like:</p>
