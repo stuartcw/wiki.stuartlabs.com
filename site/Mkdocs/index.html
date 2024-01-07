@@ -1,0 +1,557 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://wiki.stuartlabs.com/Mkdocs/">
+      
+      
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>MkDocs - Stuart's Brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mkdocs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Stuart&#39;s Brain" class="md-header__button md-logo" aria-label="Stuart's Brain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Stuart's Brain
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MkDocs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Stuart&#39;s Brain" class="md-nav__button md-logo" aria-label="Stuart's Brain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Stuart's Brain
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs Help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-i-decided-to-use-mkdocs-as-a-knowledge-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why I decided to use MkDocs as a knowledge repository.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-why-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      So why MKDocs.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="So why MKDocs.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-want-something-more-like-a-wiki" class="md-nav__link">
+    <span class="md-ellipsis">
+      I want something more like a wiki.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-to-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save to Github Pages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-text-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Text Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extendibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extendibility
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown Extensions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
+<h2 id="why-i-decided-to-use-mkdocs-as-a-knowledge-repository">Why I decided to use MkDocs as a knowledge repository.<a class="headerlink" href="#why-i-decided-to-use-mkdocs-as-a-knowledge-repository" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Ye shall know them by their fruits.
+Matthew 7:16</p>
+</blockquote>
+<p>A week or so ago I came a across a web page <a href="https://www.mentalnodes.com/a-gardening-guide-for-your-mind">A gardening guide for your mind</a>  which mentioned the following:</p>
+<blockquote>
+<p>A gardening guide for your mind</p>
+<p>This is what a gardening guide for your mind would look like:</p>
+<ul>
+<li><strong>Seeds</strong>. Seed your garden with quality content and cultivate your curiosity. Plant seeds in your mind garden by taking smart personal notes (taking raw notes is useless). These don&rsquo;t need to be written in a publishable form.</li>
+<li><strong>Trees</strong>. Grow your knowledge by forming new branches and connecting the dots. Write short structured notes articulating specific ideas and publish them in your digital garden. One note in your digital garden = one idea. (what you&rsquo;re currently reading is such a note) Do not keep orphan notes. Thread your thoughts.</li>
+<li><strong>Fruits</strong>. Produce new work. These are more substantial—essays, videos, maybe a book at some point. The kind of work researchers and creatives may hope will help them live beyond their expiration date.
+Networked thinking can happen at many levels. A digital garden is a scalable way to transform seeds of information into original work and to go from collector to creator.
+</li>
+</ul>
+</blockquote>
+<p>This made me realise that I have a huge and fairly well managed collection of seeds. I have notes and bookmarks for almost every site I have visited. I have collection of quotations from every book I have read on the Kindle over the last few years.</p>
+<p>However I always felt that something was lacking.</p>
+<p>I do also have, scattered around Internet, many Trees. Most are written in chats with friends or groups of acquaintances and are mind dumps on a topic that I was inspired to write at the time.</p>
+<p>But, for all that work, I have no fruits of any consequence.</p>
+<p>Some well known content creators have successfully gathered their articles_trees_ into a book <em>fruit</em> or made a body of work, such as a collection of videos or pictures into a portfolio. Likewise the a collection of code into a project.</p>
+<p>All of these have the common feature that they gathered their research into a collective whole and published it. </p>
+<p>I have had the feeling that this was the way to go for a long time but the article was what convinced me of it,</p>
+<h2 id="so-why-mkdocs">So why MKDocs.<a class="headerlink" href="#so-why-mkdocs" title="Permanent link">&para;</a></h2>
+<p>I did have blog of chronological links that I was publishing monthly but while the content was good it was a burden to do it monthly and also the method of retrieval wasn&rsquo;t useful for anyone. Nobody cares that I first found out about something last September, so a chronological blog doesn&rsquo;t fit the pattern that I want.</p>
+<h3 id="i-want-something-more-like-a-wiki">I want something more like a wiki.<a class="headerlink" href="#i-want-something-more-like-a-wiki" title="Permanent link">&para;</a></h3>
+<p>The article above is published on a static site that based on TiddlyWiki. I like TiddlyWiki and it is extremely well done but after a couple of days I couldn&rsquo;t get the backend storage working on Github and on Node in a way that I wanted. I didn&rsquo;t want to the complexity of debugging a Node/JavaScript conversion to a static site.</p>
+<p>All I want is a wiki that is based on Markdown written in a language that I am 100% comfortable with and for me that is Python. </p>
+<p>I have found other ways of doing this and I&rsquo;m sure that I&rsquo;ll come back to those in future, if only to describe their good and bad points.</p>
+<p>While I will probably write it is a blog, I want the flexibility to revise the articles and just keep the most relevant one on the web.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<p>MKDocs has two features that I like. One I am yet to try.</p>
+<h3 id="web-server">Web Server<a class="headerlink" href="#web-server" title="Permanent link">&para;</a></h3>
+<p>The first is that it serves the files with a mini web servers so you can work locally and see your site as you write. You could use it this way just to have a local information repository.</p>
+<h3 id="save-to-github-pages">Save to Github Pages<a class="headerlink" href="#save-to-github-pages" title="Permanent link">&para;</a></h3>
+<p>The second is that it renders contents as static HTML which you can scp up to your site. I am yet to do this. It also can deploy directly to Github pages. This I am also yet to try but I may end up using in the end to host my public repository. I guess that this involves in checking in the HTML to Github.</p>
+<p>In terms of management the Markdown files will also need to be checked into Git.</p>
+<p>One thing that made it more attractive to me was that there is a Wiki plugin which worked right away. This automatically makes a link to the page with the same title as the WikiLink so is an easy way to make a Wiki like site. Clicking on a broken wiki link will lead to the standard 404 page so it is not a Wiki in the true sense of the word.</p>
+<h2 id="full-text-search">Full Text Search<a class="headerlink" href="#full-text-search" title="Permanent link">&para;</a></h2>
+<p>One feature that I wasn&rsquo;t expecting was full text search. I&rsquo;m not sure exactly this works but I think that during the HTML creation the pages are tokenised an index created that allows a Javascript on the page to display they results. I&rsquo;m not sure how this scales though.</p>
+<h2 id="extendibility">Extendibility<a class="headerlink" href="#extendibility" title="Permanent link">&para;</a></h2>
+<p>Looking at the api docs and the plugins documentation it seems that it is fully extensible in python <del class="critic"><em>and though I probably won&rsquo;t</em></del>.</p>
+<p>You can extend MkDocs with code like:</p>
+<div class="highlight"><pre><span></span><code>import sys 
+import html
+import os
+
+MARKDOWN_CODE=&quot;\n`&quot;+&quot;`&quot;+&quot;`\n&quot;
+
+def define_env(env):
+    &quot;Hook function&quot;
+
+    @env.macro
+    def mymacro():
+      with open(&quot;main.py&quot;) as this_python_file:
+          lines=&quot;&quot;.join(this_python_file.readlines())
+
+      return &quot;You can extend MkDocs with code like:\n&quot;+MARKDOWN_CODE+lines+MARKDOWN_CODE
+
+
+    @env.macro
+    def code_from_file(path: str, flavor: str = &quot;&quot;):
+        &quot;&quot;&quot;
+        Load code from a file and save as a preformatted code block.
+        If a flavor is specified, it&#39;s passed in as a hint for syntax highlighters.
+
+        Example usage in markdown:
+
+            {{code_from_file(&quot;code/myfile.py&quot;, &quot;python&quot;)}}
+
+        &quot;&quot;&quot;
+        docs_dir =&quot;includes&quot;
+        path = os.path.abspath(os.path.join(docs_dir, path))
+        if not os.path.exists(path):
+            return f&quot;&quot;&quot;&lt;b&gt;File not found: {path}&lt;/b&gt;&quot;&quot;&quot;
+        with open(path, &quot;r&quot;) as f:
+            return (
+                #f&quot;&quot;&quot;&lt;pre&gt;&lt;code class=&quot;{flavor}&quot;&gt;{html.escape(f.read())}&lt;/code&gt;&lt;/pre&gt;&quot;&quot;&quot;
+                f&quot;```{flavor}\n&quot;+f.read()+&quot;\n```&quot;
+            )
+
+    @env.macro
+    def external_markdown(fn: str):
+        &quot;&quot;&quot;
+        Load markdown from files external to the mkdocs root path.
+        Example usage in markdown:
+
+            {{external_markdown(&quot;../../README.md&quot;)}}
+
+        &quot;&quot;&quot;
+        docs_dir = env[&quot;project_dir&quot;]+&quot;/includes&quot;
+        fn = os.path.abspath(os.path.join(docs_dir, fn))
+        if not os.path.exists(fn):
+            return f&quot;&quot;&quot;&lt;b&gt;File not found: {fn}&lt;/b&gt;&quot;&quot;&quot;
+        with open(fn, &quot;r&quot;) as f:
+            return f.read()
+</code></pre></div>
+<h2 id="markdown-extensions">Markdown Extensions<a class="headerlink" href="#markdown-extensions" title="Permanent link">&para;</a></h2>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions Documentation</a> has some nice extension to Markdown to add additional features to your editing. Such as <em>critic</em> to add <del class="critic"><em>crossing out</em></del> and <em>emoji</em> to add emoji <img alt="🚀" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f680.svg" title=":rocket:" />. </p>
+<p><br><hr><em>Hello world!</em> from <code>on_page_markdown.py</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
