@@ -1,7 +1,12 @@
 site_name: Stuart's Brain 
 site_url: http://wiki.stuartlabs.com/
 
-theme: material    
+theme: material
+
+features:
+    - content.action.edit
+    - content.action.view
+
 
 plugins:
     - search
@@ -17,6 +22,9 @@ nav:
     - MkDocs Help: help.md
     - Info: info.md
 
+extra:
+  status:
+      - new : new
 
 markdown_extensions:
     - pymdownx.highlight
