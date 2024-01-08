@@ -1,4 +1,6 @@
+from icecream import ic
+
 def print_env(env,config,files):
-    print(env)
-    print(config)
-    print(files)
+    ic(env)
+    ic(config)
+    ic(files)
