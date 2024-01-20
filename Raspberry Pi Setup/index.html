@@ -292,9 +292,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#todo" class="md-nav__link">
+  <a href="#fix-sd-card-problem" class="md-nav__link">
     <span class="md-ellipsis">
-      Todo
+      Fix SD Card problem
     </span>
   </a>
   
@@ -316,11 +316,13 @@
 
 
 <h1 id="raspberry-pi-setup">Raspberry Pi Setup<a class="headerlink" href="#raspberry-pi-setup" title="Permanent link">&para;</a></h1>
-<h2 id="todo">Todo<a class="headerlink" href="#todo" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Fix SD Card problem</li>
-<li><br><hr><em>Hello world!</em> from <code>on_page_markdown.py</code></li>
-</ul>
+<h2 id="fix-sd-card-problem">Fix SD Card problem<a class="headerlink" href="#fix-sd-card-problem" title="Permanent link">&para;</a></h2>
+<p>There has been a lot of discussion recently about bad SD cards which are not the advertised size. The card I was using with my Raspberry Pi always seemed a bit strange so I decided to check it and found the following command</p>
+<p>TODO</p>
+<p>This command writes to every sector on the card and the corresponding command reads from every sector confirming that the write was good.</p>
+<p>When I tested my 128GB card it was automatically eject after a few minutes and couldn&rsquo;t be tested. I wondered whether the multi card reader that was plugged into the USB C port on my Mac was getting moved slightly due vibration and losing the connection so I tried again. The same problem occured. </p>
+<p>Since I thougth it was a physical problem I decided to get a single function mini-SD card reader which arrived from Amazon the following day. Testing reading and writing to the card worked perfectly and that it wasn&rsquo;t the card that was a fault but the multi card reader.
+<br><hr><em>Hello world!</em> from <code>on_page_markdown.py</code></p>
 
 
 
