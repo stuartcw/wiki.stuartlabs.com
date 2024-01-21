@@ -54,6 +54,7 @@ tags:
 
 ### Linux
 
+* [Ubuntu Notes](Ubuntu.md)
 * [Raspberry Pi](Raspberry Pi Setup.md)
 * [SD Card Testing](SD_Card_Testing.md)
 

@@ -6,6 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="An online notebook of things that I am interested in.">
+      
+      
+        <meta name="author" content="Stuart Woodward">
       
       
         <link rel="canonical" href="http://wiki.stuartlabs.com/Generate_Random_Quotes/">
@@ -149,6 +153,18 @@
 </div>
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/stuartcw/wiki.stuartlabs.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -182,6 +198,18 @@
     </a>
     Stuart's Brain
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/stuartcw/wiki.stuartlabs.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -332,12 +360,146 @@
                 
                   
 
+  
+  
+
 
 <h1 id="generate-random-quotesmd">Generate Random Quotes.md<a class="headerlink" href="#generate-random-quotesmd" title="Permanent link">&para;</a></h1>
 <h2 id="download-the-quotes-file">Download the quotes file<a class="headerlink" href="#download-the-quotes-file" title="Permanent link">&para;</a></h2>
-<p><b>File not found: /Users/stuartcw/Github/wiki.stuartlabs.com/includes/code/get_quotes.sh</b></p>
+<div class="highlight"><pre><span></span><code><span class="n">BACKUP_FILE_DATE</span><span class="o">=</span><span class="err">`</span><span class="n">date</span> <span class="o">-</span><span class="n">r</span> <span class="n">quotes</span><span class="o">.</span><span class="n">csv</span> <span class="s2">&quot;+%m-</span><span class="si">%d</span><span class="s2">-%Y_%H_%M_%S&quot;</span><span class="err">`</span>
+<span class="n">mv</span> <span class="n">quotes</span><span class="o">.</span><span class="n">csv</span> <span class="n">quotes_</span><span class="err">$</span><span class="n">BACKUP_FILE_DATE</span><span class="o">.</span><span class="s2">&quot;csv&quot;</span>
+<span class="n">curl</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gist</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">JakubPetriska</span><span class="o">/</span><span class="mi">060958</span><span class="n">fd744ca34f099e947cd080b540</span><span class="o">/</span><span class="n">raw</span><span class="o">/</span><span class="mi">963</span><span class="n">b5a9355f04741239407320ac973a6096cd7b6</span><span class="o">/</span><span class="n">quotes</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span><span class="n">o</span> <span class="n">quotes</span><span class="o">.</span><span class="n">csv</span>
+<span class="n">rm</span> <span class="n">quotes</span><span class="o">.</span><span class="n">json</span>
+</code></pre></div>
 <h2 id="simple-cgi-web-service">Simple CGI web service<a class="headerlink" href="#simple-cgi-web-service" title="Permanent link">&para;</a></h2>
-<p><b>File not found: /Users/stuartcw/Github/wiki.stuartlabs.com/includes/code/quote_tree.py</b></p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/local/bin/python3</span>
+<span class="c1">#md# quote_tree.py</span>
+<span class="c1">#mdA program to read a collection of quotes from a csv file and provide a CGI based JSON API to retrieve random quotes generated from the frequency data of the words and following words in the input quotes.</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1">#md### Import the required libraries.</span>
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">pprint</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+
+<span class="n">MAX_WORD_COUNT</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="c1">#md Set the location file holding the generated quote data.</span>
+<span class="n">CURRENT_FOLDER</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+<span class="n">QUOTE_FILE</span><span class="o">=</span><span class="n">CURRENT_FOLDER</span><span class="o">+</span><span class="s2">&quot;/quotes.json&quot;</span>
+
+<span class="k">def</span> <span class="nf">process_quotes</span><span class="p">():</span>
+    <span class="c1">#md **This function reads all the quotes afresh and returns a node graph structure eroniously called tree in a dictionary comprising of a key labeling a node and a value containing a list of the lables that a node connects to. No attempt is made remove duplicates in the lable list as this is used later to weight the chance of being selected when the random quote is created from this data.**</span>
+
+    <span class="c1">#md Collect the authors of the quotes in a set of unique author names.</span>
+    <span class="n">authors</span><span class="o">=</span><span class="nb">set</span><span class="p">()</span>
+
+    <span class="c1">#md Read in the quotes from the CSV file. #TODO move this hardcoded path to a constant.</span>
+    <span class="n">quotes</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">CURRENT_FOLDER</span><span class="o">+</span><span class="s2">&quot;/quotes.csv&quot;</span><span class="p">))</span>
+
+    <span class="c1">#md Skip over the header which is the first line of the CSV file.</span>
+    <span class="nb">next</span><span class="p">(</span><span class="n">quotes</span><span class="p">)</span>
+
+    <span class="c1">#md `tree` is the main data structure in the program.</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+    <span class="c1">#md Iterate throught the quotes. i is the row count, row is the a tuple.</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">quotes</span><span class="p">):</span>
+
+        <span class="c1">#md Extract the author and quote from the row data.</span>
+        <span class="n">author</span><span class="p">,</span><span class="n">quote</span> <span class="o">=</span> <span class="n">row</span>
+
+        <span class="c1">#md Add this author to set of authors.</span>
+        <span class="n">authors</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">author</span><span class="p">)</span>
+
+        <span class="c1">#md We now read the words of the quote one by one. Initially there is no previous word.</span>
+        <span class="n">previous_word</span><span class="o">=</span><span class="kc">None</span>
+        <span class="c1">#md split the `quote` into `parts` separated by spaces.</span>
+        <span class="n">parts</span><span class="o">=</span><span class="n">quote</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+        <span class="c1">#md For each word in the quote, append it to the previous words list of following words.</span>
+        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">parts</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">previous_word</span><span class="p">:</span>
+                <span class="n">tree</span><span class="p">[</span><span class="n">previous_word</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+            <span class="n">previous_word</span><span class="o">=</span><span class="n">word</span>
+
+    <span class="c1">#md Assume that words which start a quote start with a capital letter. #TODO fix this.</span>
+    <span class="n">start_words</span><span class="o">=</span><span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">==</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+    <span class="c1">#md This looks like it is not used.</span>
+    <span class="n">other_words</span><span class="o">=</span><span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">!=</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+    <span class="c1">#md Convert the set into a list as JSON doesn&#39;t no how to encode sets.</span>
+    <span class="n">authors</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">authors</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">tree</span><span class="p">,</span> <span class="n">start_words</span><span class="p">,</span> <span class="n">other_words</span><span class="p">,</span> <span class="n">authors</span>
+
+<span class="k">def</span> <span class="nf">get_quote</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">start_words</span><span class="p">,</span> <span class="n">other_words</span><span class="p">,</span> <span class="n">authors</span><span class="p">):</span>
+    <span class="c1">#md**A function to return a randomly generated psuedo quote based on the quote data.**</span>
+
+    <span class="c1">#md This is the return value.</span>
+    <span class="n">sentence</span><span class="o">=</span><span class="p">[]</span>
+    <span class="c1">#md Choose a random word to start the sentence.</span>
+    <span class="n">w</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">start_words</span><span class="p">)</span>
+    <span class="n">sentence</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+
+    <span class="c1">#md Set a limit of 100 word long sentences. This is an artibary choice but there is no guarantee that the loop will end without it.</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">):</span>
+        <span class="c1">#md This `try` is probably not needed anymore but was useful in debugging. #TODO fix</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1">#If the word is not a node then quit. #TODO is this needed now?</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">:</span> 
+                <span class="k">break</span>
+
+            <span class="c1">#md Start with unpopulated word list selection.</span>
+            <span class="n">wordlist</span><span class="o">=</span><span class="p">[]</span> 
+
+            <span class="c1"># If we have reached the expected maximum length for a sentence then limit the word selection to only those which end in a full stop. This can be an empty list.  #TODO Check the word ending chars.</span>
+            <span class="k">if</span> <span class="n">i</span><span class="o">&gt;</span><span class="n">MAX_WORD_COUNT</span><span class="p">:</span>
+                <span class="n">wordlist</span><span class="o">=</span><span class="p">[</span> <span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="k">if</span> <span class="n">w</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span><span class="s2">&quot;.&quot;</span> <span class="p">]</span> 
+            <span class="c1">#If there are no ending words defined then allow a full selection of following words.</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">wordlist</span><span class="p">):</span>
+                <span class="n">wordlist</span><span class="o">=</span><span class="n">tree</span><span class="p">[</span><span class="n">w</span><span class="p">]</span>
+
+            <span class="c1">#md Choose a random word from the word list.</span>
+            <span class="n">w</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">wordlist</span><span class="p">)</span>
+            <span class="c1">#md Add it to the sentence.</span>
+            <span class="n">sentence</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+            <span class="k">break</span>
+
+    <span class="c1">#md **Return the sentence followed by 2 newlines and a random author.**</span>
+    <span class="k">return</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">authors</span><span class="p">)</span>
+
+<span class="c1">#md This could be in a separate file.</span>
+<span class="c1">#md import the CGI libraries, just for debugging.</span>
+<span class="kn">import</span> <span class="nn">cgi</span>
+<span class="kn">import</span> <span class="nn">cgitb</span>
+<span class="n">cgitb</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Content-Type: application/json; charset=utf-8</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1">#md Assume that the JSON quote file has been generated and load it.</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">QUOTE_FILE</span><span class="p">))</span>
+<span class="c1">#md If loading the JSON quote data fails then create it and save it, loading it into `data`. This means that the first hit may take a while to complete.</span>
+<span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+    <span class="n">tree</span><span class="p">,</span> <span class="n">start_words</span><span class="p">,</span> <span class="n">other_words</span><span class="p">,</span> <span class="n">authors</span><span class="o">=</span><span class="n">process_quotes</span><span class="p">()</span>
+    <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;tree&quot;</span><span class="p">:</span><span class="n">tree</span><span class="p">,</span> <span class="s2">&quot;start_words&quot;</span><span class="p">:</span><span class="n">start_words</span><span class="p">,</span> <span class="s2">&quot;other_words&quot;</span><span class="p">:</span><span class="n">other_words</span><span class="p">,</span> <span class="s2">&quot;authors&quot;</span><span class="p">:</span><span class="n">authors</span><span class="p">}</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="nb">open</span><span class="p">(</span><span class="n">QUOTE_FILE</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">),</span><span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1">#md This holds the return data.</span>
+<span class="n">markov_quotes</span><span class="o">=</span><span class="p">[]</span>
+<span class="c1">#md Assume the requestor wants 10 quotes.</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">markov_quotes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_quote</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;tree&quot;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;start_words&quot;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;other_words&quot;</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;authors&quot;</span><span class="p">]))</span>
+<span class="c1">#md return them via HTTP JSON response.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">&quot;quotes&quot;</span><span class="p">:</span><span class="n">markov_quotes</span><span class="p">},</span><span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</code></pre></div>
 <h2 id="sample-json-output">Sample json output<a class="headerlink" href="#sample-json-output" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;quotes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -382,6 +544,10 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2024
+    </div>
   
   
     Made with

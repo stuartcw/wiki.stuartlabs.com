@@ -12,7 +12,7 @@
         <meta name="author" content="Stuart Woodward">
       
       
-        <link rel="canonical" href="http://wiki.stuartlabs.com/Adventure/">
+        <link rel="canonical" href="http://wiki.stuartlabs.com/Home_Automation/">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>Adventure - Stuart's Brain</title>
+        <title>Home Automation - Stuart's Brain</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Adventure
+              Home Automation
             
           </span>
         </div>
@@ -322,70 +322,9 @@
   
 
 
-  <h1>Adventure</h1>
+  <h1>Home Automation</h1>
 
-<p>I always want to make an adventure game. This seems like a good library.</p>
-<p><div class="highlight"><pre><span></span><code>#!/usr/local/bin/python3
-
-from adventurelib import *
-from dataclasses import dataclass, field
-import sys
-
-@dataclass
-class Room:
-    description: str = &quot;An empty room&quot;
-    items: list[int]=field(default_factory=list)
-
-currentRoom=Room()
-inventory=[&quot;an old sausage&quot;,&quot;a golden key&quot;]
-
-@when(&quot;exit&quot;)
-def exit():
-    sys.exit()
-
-@when(&quot;look&quot;)
-def look():
-    say(f&quot;You see {currentRoom.description}.&quot;)
-
-@when(&quot;scream&quot;)
-def scream():
-    print(&quot;You unleash a piercing shriek that reverberates around you.&quot;)
-
-@when(&quot;brush teeth&quot;)
-def brush_teeth():
-    print(&quot;You brush your teeth. They feel clean.&quot;)
-
-@when(&quot;take THING&quot;)
-def take(thing):
-    print(f&quot;You take the {thing}.&quot;)
-    inventory.append(thing)
-
-@when(&quot;drop THING&quot;)
-def drop(thing):
-    say(f&quot;You drop the {thing}.&quot;)
-    inventory.remove(thing)
-
-@when(&quot;inventory&quot;)
-def show_inventory():
-    say(&quot;You are carrying &quot;+(&quot;, &quot;.join(inventory[:-1]))+f&quot; and {inventory[-1]}.&quot;)
-
-@when(&#39;enter mirror&#39;)
-def enter_mirror():
-    if get_context() == &#39;wonderland&#39;:
-        say(&#39;There is no mirror here.&#39;)
-    else:
-        set_context(&#39;wonderland&#39;)
-        say(&#39;You step into the silvery surface, which feels wet and cool.&#39;)
-        say(&#39;You realise that clicking your heels will let you return.&#39;)
-
-
-@when(&#39;click heels&#39;, context=&#39;wonderland&#39;)
-def click_heels():
-    set_context(None)
-    say(&#39;The moment your heels touch the world rearranges around you.&#39;)
-
-start()
-</code></pre></div>
+<p>Test this this is a test
 <br><hr><em>Hello world!</em> from <code>on_page_markdown.py</code></p>
 
 
