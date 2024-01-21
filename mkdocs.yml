@@ -5,7 +5,7 @@ site_author: Stuart Woodward
 site_description: An online notebook of things that I am interested in.
 copyright: Copyright 2024
 remote_branch: gh-pages
-remote_name: gh-pages
+comment_remote_name: gh-pages
 
 theme: material
 
