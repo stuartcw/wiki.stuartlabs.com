@@ -10,6 +10,8 @@ tags:
 ---
 # Stuart's Knowledge and Opinion Repository
 
+{{ date.strftime('%B %d, %Y') }}
+
 > For this you keep a lab notebook. Everything gets written down, formally,
   so that you know at all times where you are, where you’ve been, where you’re
   going and where you want to get. In scientific work and electronics technology
@@ -22,19 +24,25 @@ tags:
 
 ## Articles
 
-* :new: [A new way of coding](A_New_Way_Of_Coding.md)
-* :new: [Todo](Todo.md)
+* [A new way of coding](A_New_Way_Of_Coding.md)
+* [Todo](Todo.md)
 
 ### Mkdocs
 
-* [Mkdocs](Mkdocs.md) 
+* :new: [Mkdocs](Mkdocs.md) 
 * [Extending Mkdocs](Extending_Mkdocs.md)
 
-In case I am looking for where this site is kept, it is at ```~/Documents/Wiki```
+:new: In case I am looking for where this site is kept, it is at ```~/Github/wiki.stuartlabs.com```
+
+### Japanese Tools
+
+* [Japanese Tools](Japanese_Tools.md)
+* TODO How I study Japanse.
+* TODO Japanese Text Processing.
 
 ### Python
 
-* :new: [Pretty Maps](Pretty_Maps.md) use OpenStreetmaps to make pretty maps from an address.
+* [Pretty Maps](Pretty_Maps.md) use OpenStreetmaps to make pretty maps from an address.
 
 ### Random Quotes
 
@@ -44,8 +52,15 @@ In case I am looking for where this site is kept, it is at ```~/Documents/Wiki``
 
 * [Keybase API](Keybase_API.md) Keybase CHAT Api example.
 
+### Linux
+
+* [Raspberry Pi](Raspberry Pi Setup.md)
+* [SD Card Testing](SD_Card_Testing.md)
+
 ### To Write
 
+* Debugging Stories.
+* Local Guide to places.
 * I accidentally made something interesting. A light that comes on at dawn.
 * How I generate random quotes.
 * How I use Buffer on the iPhone and shortcuts to auotmatically tweet. 
