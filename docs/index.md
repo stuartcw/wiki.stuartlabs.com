@@ -37,7 +37,7 @@ tags:
 ### Japanese Tools
 
 * [Japanese Tools](Japanese_Tools.md)
-* TODO How I study Japanse.
+* TODO How I study Japanese.
 * TODO Japanese Text Processing.
 
 ### Python
