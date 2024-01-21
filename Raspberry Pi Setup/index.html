@@ -6,6 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="An online notebook of things that I am interested in.">
+      
+      
+        <meta name="author" content="Stuart Woodward">
       
       
         <link rel="canonical" href="http://wiki.stuartlabs.com/Raspberry%20Pi%20Setup/">
@@ -149,6 +153,18 @@
 </div>
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/stuartcw/wiki.stuartlabs.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -182,6 +198,18 @@
     </a>
     Stuart's Brain
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/stuartcw/wiki.stuartlabs.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -285,23 +313,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fix-sd-card-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fix SD Card problem
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -314,14 +325,12 @@
                 
                   
 
+  
+  
+
 
 <h1 id="raspberry-pi-setup">Raspberry Pi Setup<a class="headerlink" href="#raspberry-pi-setup" title="Permanent link">&para;</a></h1>
-<h2 id="fix-sd-card-problem">Fix SD Card problem<a class="headerlink" href="#fix-sd-card-problem" title="Permanent link">&para;</a></h2>
-<p>There has been a lot of discussion recently about bad SD cards which are not the advertised size. The card I was using with my Raspberry Pi always seemed a bit strange so I decided to check it and found the following command</p>
-<p>TODO</p>
-<p>This command writes to every sector on the card and the corresponding command reads from every sector confirming that the write was good.</p>
-<p>When I tested my 128GB card it was automatically eject after a few minutes and couldn&rsquo;t be tested. I wondered whether the multi card reader that was plugged into the USB C port on my Mac was getting moved slightly due vibration and losing the connection so I tried again. The same problem occured. </p>
-<p>Since I thougth it was a physical problem I decided to get a single function mini-SD card reader which arrived from Amazon the following day. Testing reading and writing to the card worked perfectly and that it wasn&rsquo;t the card that was a fault but the multi card reader.
+<p>First I checked the SD Card.
 <br><hr><em>Hello world!</em> from <code>on_page_markdown.py</code></p>
 
 
@@ -350,6 +359,10 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2024
+    </div>
   
   
     Made with

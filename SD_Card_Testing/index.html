@@ -12,7 +12,7 @@
         <meta name="author" content="Stuart Woodward">
       
       
-        <link rel="canonical" href="http://wiki.stuartlabs.com/Adventure/">
+        <link rel="canonical" href="http://wiki.stuartlabs.com/SD_Card_Testing/">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>Adventure - Stuart's Brain</title>
+        <title>Verifying the SD Card - Stuart's Brain</title>
       
     
     
@@ -66,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#verifying-the-sd-card" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Adventure
+              Verifying the SD Card
             
           </span>
         </div>
@@ -305,6 +310,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -322,71 +329,21 @@
   
 
 
-  <h1>Adventure</h1>
-
-<p>I always want to make an adventure game. This seems like a good library.</p>
-<p><div class="highlight"><pre><span></span><code>#!/usr/local/bin/python3
-
-from adventurelib import *
-from dataclasses import dataclass, field
-import sys
-
-@dataclass
-class Room:
-    description: str = &quot;An empty room&quot;
-    items: list[int]=field(default_factory=list)
-
-currentRoom=Room()
-inventory=[&quot;an old sausage&quot;,&quot;a golden key&quot;]
-
-@when(&quot;exit&quot;)
-def exit():
-    sys.exit()
-
-@when(&quot;look&quot;)
-def look():
-    say(f&quot;You see {currentRoom.description}.&quot;)
-
-@when(&quot;scream&quot;)
-def scream():
-    print(&quot;You unleash a piercing shriek that reverberates around you.&quot;)
-
-@when(&quot;brush teeth&quot;)
-def brush_teeth():
-    print(&quot;You brush your teeth. They feel clean.&quot;)
-
-@when(&quot;take THING&quot;)
-def take(thing):
-    print(f&quot;You take the {thing}.&quot;)
-    inventory.append(thing)
-
-@when(&quot;drop THING&quot;)
-def drop(thing):
-    say(f&quot;You drop the {thing}.&quot;)
-    inventory.remove(thing)
-
-@when(&quot;inventory&quot;)
-def show_inventory():
-    say(&quot;You are carrying &quot;+(&quot;, &quot;.join(inventory[:-1]))+f&quot; and {inventory[-1]}.&quot;)
-
-@when(&#39;enter mirror&#39;)
-def enter_mirror():
-    if get_context() == &#39;wonderland&#39;:
-        say(&#39;There is no mirror here.&#39;)
-    else:
-        set_context(&#39;wonderland&#39;)
-        say(&#39;You step into the silvery surface, which feels wet and cool.&#39;)
-        say(&#39;You realise that clicking your heels will let you return.&#39;)
-
-
-@when(&#39;click heels&#39;, context=&#39;wonderland&#39;)
-def click_heels():
-    set_context(None)
-    say(&#39;The moment your heels touch the world rearranges around you.&#39;)
-
-start()
-</code></pre></div>
-<br><hr><em>Hello world!</em> from <code>on_page_markdown.py</code></p>
+<h1 id="verifying-the-sd-card">Verifying the SD Card<a class="headerlink" href="#verifying-the-sd-card" title="Permanent link">&para;</a></h1>
+<p>There has been a lot of discussion recently about bad SD cards which are not the advertised size. The card I was using with my Raspberry Pi always seemed a 
+bit strange so I decided to check it and found the following command:</p>
+<p><code>f3write</code></p>
+<p>This command writes to every sector on the card and the corresponding command reads from every sector confirming that the write was good.</p>
+<p>When I tested my 128GB card it was automatically eject after a few minutes and couldn&rsquo;t be tested. I wondered whether the multi card reader that was plugged 
+into the USB C port on my Mac was getting moved slightly due vibration and losing the connection so I tried again. The same problem occured.</p>
+<p>Since I thougth it was a physical problem I decided to get a single function mini-SD card reader which arrived from Amazon the following day. Testing reading 
+and writing to the card worked perfectly and that it wasn&rsquo;t the card that was a fault but the multi card reader.</p>
+<p>Also see:</p>
+<ul>
+<li><a href="https://daniel-starling.com/blog/2017/10/15/mac-os-x-verify-sd-card/">Verifying SD-card size/capacity on Mac OS X</a></li>
+<li><a href="https://medium.com/@drawn_stories/how-to-find-if-your-thumb-drive-sd-card-is-fake-with-f3-linux-tutorial-f0109bef63ea">How to Find if Your Thumb Drive/SD Card Is Fake With f3 (Linux Tutorial) Make sure your data is safe.</a>
+<br><hr><em>Hello world!</em> from <code>on_page_markdown.py</code></li>
+</ul>
 
 
 
