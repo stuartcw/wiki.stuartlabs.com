@@ -86,6 +86,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://wiki.stuartlabs.com/Ubuntu/</loc>
+         <lastmod>2024-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://wiki.stuartlabs.com/about/</loc>
          <lastmod>2024-01-21</lastmod>
          <changefreq>daily</changefreq>
