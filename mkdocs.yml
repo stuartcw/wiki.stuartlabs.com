@@ -1,11 +1,18 @@
 site_name: Stuart's Brain 
 site_url: http://wiki.stuartlabs.com/
+repo_url: https://github.com/stuartcw/wiki.stuartlabs.com
+site_author: Stuart Woodward
+site_description: An online notebook of things that I am interested in.
+copyright: Copyright 2024
+remote_branch: gh-pages
+remote_name: gh-pages
 
 theme: material
 
 features:
     - content.action.edit
     - content.action.view
+
 
 
 plugins:
